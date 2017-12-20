@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "start": "tsc && npm run build:live",
-    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./server.js"
+    "build:live": "nodemon server.js"
   },
   "repository": {
     "type": "git",
