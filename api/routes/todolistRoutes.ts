@@ -7,7 +7,7 @@ module.exports = function(app : any) {
       .post(todoList.create_a_task);
   
   
-    app.route('/tasks/:taskId')
+    app.route('/tasks/:key')
       .get(todoList.read_a_task)
       .put(todoList.update_a_task)
       .delete(todoList.delete_a_task);
