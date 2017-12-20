@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "test",
-    "start": "nodemon server.js"
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./server.ts"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,10 @@
   },
   "homepage": "https://github.com/JessieArr/systematizr.api#readme",
   "devDependencies": {
-    "nodemon": "^1.13.3"
+    "@types/node": "^8.5.1",
+    "nodemon": "^1.13.3",
+    "ts-node": "^4.0.2",
+    "typescript": "^2.6.2"
   },
   "dependencies": {
     "express": "^4.16.2"
