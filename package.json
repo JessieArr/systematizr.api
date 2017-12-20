@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "test",
-    "start": "npm run build:live",
-    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./server.ts"
+    "start": "tsc && npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./server.js"
   },
   "repository": {
     "type": "git",
