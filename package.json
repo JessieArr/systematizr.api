@@ -4,7 +4,8 @@
   "description": "The API for Systematizr.",
   "main": "main.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/JessieArr/systematizr.api/issues"
   },
-  "homepage": "https://github.com/JessieArr/systematizr.api#readme"
+  "homepage": "https://github.com/JessieArr/systematizr.api#readme",
+  "devDependencies": {
+    "nodemon": "^1.13.3"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
